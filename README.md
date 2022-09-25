@@ -1,7 +1,3 @@
-# React Redux with Typescript Boilerplate
-
-This boilerplate will help you to quick start your project.
-
 ## Getting Started
 
 1. Just download this repo and change the project name **OR** click on `use this template` button to create the new repo.

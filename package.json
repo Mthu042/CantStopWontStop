@@ -17,7 +17,7 @@
         "dist": "webpack --mode production --progress --config node_modules/@medly/webpack-config",
         "dist:analyze": "npm run dist -- --analyze"
     },
-    "author": "Mukul Bansal",
+    "author": "Naswai team",
     "license": "ISC",
     "husky": {
         "hooks": {

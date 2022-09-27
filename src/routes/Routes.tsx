@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 const Dashboard = lazy(() => import(/* webpackChunkName: "Dashboard" */ /* webpackPrefetch: true */ '@pages/Dashboard'));
 
-export const Routes: React.SFC = () => (
+export const Routes: React.FC = () => (
     <Suspense fallback={<span>Loading ...</span>}>
         <Switch>
             <Route exact path="/" component={Dashboard} />

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { renderWithStoreAndRouter } from '@test-utils';
 import React from 'react';
 import PageContent from '../PageContent';

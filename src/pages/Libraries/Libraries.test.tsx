@@ -3,26 +3,26 @@ import React from 'react';
 import reduxMockStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { initialState } from '@store';
-import Dashboard from './Dashboard.container';
+import Libraries from './Libraries.container';
 
-describe('Dashboard', () => {
+describe('Libraries', () => {
     const mockStore = reduxMockStore(),
-        renderDashboard = (store: ReturnType<typeof mockStore>) =>
+        renderLibraries = (store: ReturnType<typeof mockStore>) =>
             renderWithRouter(
                 <Provider store={store}>
-                    <Dashboard />
+                    <Libraries />
                 </Provider>
             );
 
     it('should render properly', () => {
-        const store = mockStore({ ...initialState, loading: { dashboard: { isLoading: false } } });
-        const { container } = renderDashboard(store);
+        const store = mockStore({ ...initialState, loading: { libraries: { isLoading: false } } });
+        const { container } = renderLibraries(store);
         expect(container).toMatchSnapshot();
     });
 
     it('should show loading if isLoading Prop is true', () => {
-        const store = mockStore({ ...initialState, loading: { dashboard: { isLoading: true } } });
-        const { container } = renderDashboard(store);
+        const store = mockStore({ ...initialState, loading: { libraries: { isLoading: true } } });
+        const { container } = renderLibraries(store);
         expect(container).toMatchSnapshot();
     });
 });

@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { AnyStyledComponent } from 'styled-components';
 
 export interface UAvatarProps {

@@ -12,7 +12,7 @@ export const Header: React.FC & WithStyle = () => {
                     Главная страница
                 </Text>
             </Styled.LeftSide>
-            <UAvatar />
+            <UAvatar textColor="#000000" size="S" />
         </Styled.Header>
     );
 };

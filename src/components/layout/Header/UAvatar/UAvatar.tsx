@@ -1,15 +1,21 @@
 import { Avatar, Text, Accordion } from '@medly-components/core';
-import { WithStyle } from '@medly-components/utils';
+import { UAvatarProps } from './UAvatar.types';
 import React from 'react';
 import * as Styled from './UAvatar.styled';
 
-export const UAvatar: React.FC & WithStyle = () => {
+export const UAvatar: React.FC<UAvatarProps> = ({ ...props }) => {
     return (
         <Styled.StyledAccordion>
             <Accordion>
                 <Accordion.Header>
                     <Styled.RightSide>
-                        <Avatar size="M">JD</Avatar>
+                        {props.src ? (
+                            <Avatar {...props}>
+                                <img src={props.src} />{' '}
+                            </Avatar>
+                        ) : (
+                            <Avatar {...props}>JD</Avatar>
+                        )}
                     </Styled.RightSide>
                 </Accordion.Header>
                 <Accordion.Content>

@@ -8,41 +8,20 @@ export const UAvatar: React.FC & WithStyle = () => {
         <Styled.StyledAccordion>
             <Accordion>
                 <Accordion.Header>
-                    <div
-                        style={{
-                            backgroundColor: '#fff'
-                        }}
-                    >
-                        <Styled.RightSide>
-                            <Avatar size="M">JD</Avatar>
-                        </Styled.RightSide>
-                    </div>
+                    <Styled.RightSide>
+                        <Avatar size="M">JD</Avatar>
+                    </Styled.RightSide>
                 </Accordion.Header>
                 <Accordion.Content>
-                    <div
-                        style={{
-                            backgroundColor: '#ecfbf9',
-                            padding: `1.8rem`
-                        }}
-                    >
-                        <Text>Content</Text>
-                    </div>
-                    <div
-                        style={{
-                            backgroundColor: '#ecfbf9',
-                            padding: `1.8rem`
-                        }}
-                    >
-                        <Text>Content</Text>
-                    </div>
-                    <div
-                        style={{
-                            backgroundColor: '#ecfbf9',
-                            padding: `1.8rem`
-                        }}
-                    >
-                        <Text>Content</Text>
-                    </div>
+                    <Styled.Content>
+                        <Text>Content1</Text>
+                    </Styled.Content>
+                    <Styled.Content>
+                        <Text>Content2</Text>
+                    </Styled.Content>
+                    <Styled.Content>
+                        <Text>Content3</Text>
+                    </Styled.Content>
                 </Accordion.Content>
             </Accordion>
         </Styled.StyledAccordion>

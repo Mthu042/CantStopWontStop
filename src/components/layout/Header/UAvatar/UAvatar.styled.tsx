@@ -8,9 +8,15 @@ export const StyledAccordion = styled(Accordion)`
     display: block;
 `;
 
+export const Content = styled('div')`
+    background-color: #ecfbf9;
+    padding: 1.8rem;
+`;
+
 export const RightSide = styled('div')`
     display: flex;
     align-items: center;
+    background-color: #fff;
     & > * {
         margin-left: ${({ theme }) => theme.spacing.S2};
     }

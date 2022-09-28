@@ -1,7 +1,8 @@
-import { Avatar, Text } from '@medly-components/core';
+import { Text } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
 import React from 'react';
 import * as Styled from './Header.styled';
+import UAvatar from './UAvatar/UAvatar';
 
 export const Header: React.FC & WithStyle = () => {
     return (
@@ -11,9 +12,7 @@ export const Header: React.FC & WithStyle = () => {
                     Главная страница
                 </Text>
             </Styled.LeftSide>
-            <Styled.RightSide>
-                <Avatar size="M">JD</Avatar>
-            </Styled.RightSide>
+            <UAvatar />
         </Styled.Header>
     );
 };

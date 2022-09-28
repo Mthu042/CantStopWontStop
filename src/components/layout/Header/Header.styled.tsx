@@ -17,11 +17,3 @@ export const LeftSide = styled('div')`
         margin-right: ${({ theme }) => theme.spacing.S2};
     }
 `;
-
-export const RightSide = styled('div')`
-    display: flex;
-    align-items: center;
-    & > * {
-        margin-left: ${({ theme }) => theme.spacing.S2};
-    }
-`;

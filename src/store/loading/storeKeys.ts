@@ -1,3 +1,3 @@
-const storeKeys = ['dashboard'];
+const storeKeys = ['libraries', 'authors'];
 
 export default storeKeys;

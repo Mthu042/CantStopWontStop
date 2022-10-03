@@ -12,9 +12,13 @@ export const SideNav: React.FC = React.memo(() => {
         <MedlySideNav defaultOpen={false} onChange={handlePathChange} active={pathname} defaultActive="/">
             <MedlySidenavHeader />
             <MedlySideNav.List>
-                <MedlySideNav.Nav path="/">
+                <MedlySideNav.Nav path="/Libraries">
                     <StarIcon />
                     <Text>Libraries</Text>
+                </MedlySideNav.Nav>
+                <MedlySideNav.Nav path="/Authors">
+                    <StarIcon />
+                    <Text>Authors</Text>
                 </MedlySideNav.Nav>
             </MedlySideNav.List>
         </MedlySideNav>

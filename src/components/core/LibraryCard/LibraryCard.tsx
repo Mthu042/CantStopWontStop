@@ -4,7 +4,7 @@ import React from 'react';
 import { defaultTheme } from '@theme';
 import * as Styled from './LibraryCard.styled';
 
-export const LibraryCard: React.FC & WithStyle = () => {
+export const LibraryCard: React.FC = () => {
     return (
         <Card
             alignItems="center"

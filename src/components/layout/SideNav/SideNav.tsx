@@ -1,16 +1,15 @@
 import { Text } from '@medly-components/core';
 import { StarIcon } from '@medly-components/icons';
 import { MedlySidenavHeader, SideNav as MedlySideNav } from '@medly-components/layout';
-import { WithStyle } from '@medly-components/utils';
 import React, { useCallback } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
-export const SideNav: React.FC & WithStyle = React.memo(() => {
+export const SideNav: React.FC = React.memo(() => {
     const { pathname } = useLocation(),
         history = useHistory(),
         handlePathChange = useCallback((page: string) => history.push(page), [history]);
     return (
-        <MedlySideNav onChange={handlePathChange} active={pathname} defaultActive="/">
+        <MedlySideNav defaultOpen={false} onChange={handlePathChange} active={pathname} defaultActive="/">
             <MedlySidenavHeader />
             <MedlySideNav.List>
                 <MedlySideNav.Nav path="/">
@@ -22,4 +21,3 @@ export const SideNav: React.FC & WithStyle = React.memo(() => {
     );
 });
 SideNav.displayName = 'AppSideNav';
-SideNav.Style = MedlySideNav.Style;

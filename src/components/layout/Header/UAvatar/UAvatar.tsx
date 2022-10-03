@@ -20,13 +20,16 @@ export const UAvatar: React.FC<UAvatarProps> = ({ ...props }) => {
                 </Accordion.Header>
                 <Accordion.Content>
                     <Styled.Content>
-                        <Text>Content1</Text>
+                        <Text>Мой Профиль</Text>
                     </Styled.Content>
                     <Styled.Content>
-                        <Text>Content2</Text>
+                        <Text>Настройки</Text>
                     </Styled.Content>
                     <Styled.Content>
-                        <Text>Content3</Text>
+                        <Text>Сменить аккаунт</Text>
+                    </Styled.Content>
+                    <Styled.Content>
+                        <Text>Выйти</Text>
                     </Styled.Content>
                 </Accordion.Content>
             </Accordion>
